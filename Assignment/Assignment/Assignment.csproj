@@ -1,0 +1,343 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8A2C9AF-714D-428B-992A-A42B35803870}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assignment</RootNamespace>
+    <AssemblyName>Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44390</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminSite\CSS\StyleSheet.css" />
+    <Content Include="AdminSite\home.aspx" />
+    <Content Include="AdminSite\Images\dolphinswim.JPG" />
+    <Content Include="AdminSite\Images\hotel1.jpeg" />
+    <Content Include="AdminSite\Images\hotel1.jpg" />
+    <Content Include="AdminSite\Images\hotel2.jpeg" />
+    <Content Include="AdminSite\Images\hotel3.jpg" />
+    <Content Include="AdminSite\Images\hotel4.jpg" />
+    <Content Include="AdminSite\Images\hotel5.jpeg" />
+    <Content Include="AdminSite\Images\ileauxcerfs.JPG" />
+    <Content Include="AdminSite\Images\instagram.png" />
+    <Content Include="AdminSite\Images\lepouce.jpg" />
+    <Content Include="AdminSite\Images\linkedin.png" />
+    <Content Include="AdminSite\Images\logo.jpeg" />
+    <Content Include="AdminSite\Images\pamplemousse.jpeg" />
+    <Content Include="AdminSite\Images\seaplane.JPG" />
+    <Content Include="AdminSite\Images\shopping-cart.png" />
+    <Content Include="AdminSite\Images\twitter.png" />
+    <Content Include="AdminSite\Images\user.png" />
+    <Content Include="AdminSite\Images\whale.JPG" />
+    <Content Include="AdminSite\Images\whalewatching.jpg" />
+    <Content Include="AdminSite\Images\whatsapp.png" />
+    <Content Include="ClientSite\accomodation.aspx" />
+    <Content Include="ClientSite\cart.aspx" />
+    <Content Include="ClientSite\contactus.aspx" />
+    <Content Include="ClientSite\CSS\StyleSheet.css" />
+    <Content Include="ClientSite\home.aspx" />
+    <Content Include="ClientSite\Images\dolphinswim.JPG" />
+    <Content Include="ClientSite\Images\hotel1.jpeg" />
+    <Content Include="ClientSite\Images\hotel1.jpg" />
+    <Content Include="ClientSite\Images\hotel2.jpeg" />
+    <Content Include="ClientSite\Images\hotel3.jpg" />
+    <Content Include="ClientSite\Images\hotel4.jpg" />
+    <Content Include="ClientSite\Images\hotel5.jpeg" />
+    <Content Include="ClientSite\Images\ileauxcerfs.JPG" />
+    <Content Include="ClientSite\Images\instagram.png" />
+    <Content Include="ClientSite\Images\lepouce.jpg" />
+    <Content Include="ClientSite\Images\linkedin.png" />
+    <Content Include="ClientSite\Images\logo.jpeg" />
+    <Content Include="ClientSite\Images\pamplemousse.jpeg" />
+    <Content Include="ClientSite\Images\seaplane.JPG" />
+    <Content Include="ClientSite\Images\shopping-cart.png" />
+    <Content Include="ClientSite\Images\twitter.png" />
+    <Content Include="ClientSite\Images\user.png" />
+    <Content Include="ClientSite\Images\whale.JPG" />
+    <Content Include="ClientSite\Images\whalewatching.jpg" />
+    <Content Include="ClientSite\Images\whatsapp.png" />
+    <Content Include="ClientSite\toursandactivities.aspx" />
+    <Content Include="ClientSite\Videos\mauritius.mp4" />
+    <Content Include="ClientSite\Videos\mauritius1.mp4" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="GuestSite\accomodation.aspx" />
+    <Content Include="GuestSite\CSS\StyleSheet.css" />
+    <Content Include="GuestSite\home.aspx" />
+    <Content Include="GuestSite\Images\dolphinswim.JPG" />
+    <Content Include="GuestSite\Images\hotel1.jpeg" />
+    <Content Include="GuestSite\Images\hotel1.jpg" />
+    <Content Include="GuestSite\Images\hotel2.jpeg" />
+    <Content Include="GuestSite\Images\hotel3.jpg" />
+    <Content Include="GuestSite\Images\hotel4.jpg" />
+    <Content Include="GuestSite\Images\hotel5.jpeg" />
+    <Content Include="GuestSite\Images\ileauxcerfs.JPG" />
+    <Content Include="GuestSite\Images\instagram.png" />
+    <Content Include="GuestSite\Images\lepouce.jpg" />
+    <Content Include="GuestSite\Images\linkedin.png" />
+    <Content Include="GuestSite\Images\logo.jpeg" />
+    <Content Include="GuestSite\Images\pamplemousse.jpeg" />
+    <Content Include="GuestSite\Images\seaplane.JPG" />
+    <Content Include="GuestSite\Images\shopping-cart.png" />
+    <Content Include="GuestSite\Images\twitter.png" />
+    <Content Include="GuestSite\Images\user.png" />
+    <Content Include="GuestSite\Images\whale.JPG" />
+    <Content Include="GuestSite\Images\whalewatching.jpg" />
+    <Content Include="GuestSite\Images\whatsapp.png" />
+    <Content Include="GuestSite\login.aspx" />
+    <Content Include="GuestSite\register.aspx" />
+    <Content Include="GuestSite\toursandactivities.aspx" />
+    <Content Include="GuestSite\Videos\mauritius.mp4" />
+    <Content Include="GuestSite\Videos\mauritius1.mp4" />
+    <Content Include="mobileHome.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSite\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSite\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSite\mainLayout.Master.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSite\mainLayout.Master.designer.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\Country.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\UserCredentials.cs" />
+    <Compile Include="ClientSite\accomodation.aspx.cs">
+      <DependentUpon>accomodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\accomodation.aspx.designer.cs">
+      <DependentUpon>accomodation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite\cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite\mainLayout.Master.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\mainLayout.Master.designer.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSite\toursandactivities.aspx.cs">
+      <DependentUpon>toursandactivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSite\toursandactivities.aspx.designer.cs">
+      <DependentUpon>toursandactivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\accomodation.aspx.cs">
+      <DependentUpon>accomodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\accomodation.aspx.designer.cs">
+      <DependentUpon>accomodation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\mainLayout.Master.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\mainLayout.Master.designer.cs">
+      <DependentUpon>mainLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestSite\toursandactivities.aspx.cs">
+      <DependentUpon>toursandactivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestSite\toursandactivities.aspx.designer.cs">
+      <DependentUpon>toursandactivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobileHome.aspx.cs">
+      <DependentUpon>mobileHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobileHome.aspx.designer.cs">
+      <DependentUpon>mobileHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientSite\mainLayout.Master" />
+    <Content Include="GuestSite\mainLayout.Master" />
+    <Content Include="AdminSite\mainLayout.Master" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53559</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44390/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
